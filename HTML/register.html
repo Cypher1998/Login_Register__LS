@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>My Website/register</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">DEMOSTORES</a>
+      </div>
+    </nav>
+    <main class="container">
+      <section class="mt-5 congratulation">
+        <form>
+          <div class="form">
+            <div class="mb-3">
+              <label for="fname" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="fname" />
+              <small class="invalid fname">FirstName must be atleast two characters!</small>
+            </div>
+            <div class="mb-3">
+              <label for="lname" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lname" />
+              <small class="invalid lname">LastName must be atleast two characters!</small>
+            </div>
+          
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" />
+              <small class="invalid email">Enter a valid email address</small>
+            </div>
+            <div class="mb-3">
+              <label for="number" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="phone" />
+              <small class="invalid number">Enter a valid phone number</small>
+            </div>
+            <label for="password" class="form-label">Password (Minimum length is 8)
+            </label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="password" />
+              <button class="change-type-password" id="button-one">Show</button>
+            </div>
+            <small class="invalid pword">Invalid pattern, check Password hint</small>
+            <label for="password" class="form-label mt-3">Confirm Password</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="confirm-password" />
+              <button class="change-type-password" id="button-two">Show</button>  
+            </div>
+            <small class="invalid conf-pword">Passwords do not match!!!</small>
+            <div class="my-3 form-check">
+              <input type="checkbox" class="form-check-input" id="checkbox" />
+              <label class="form-check-label" for="check">
+                <a
+                  href=""
+                  class="btn-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  Accept terms and conditions?
+                </a>
+                <small class="alert-terms invalid-terms" style="display: block;">You need to accept our terms and conditions!</small>
+              </div>
+            <button type="submit" class="btn btn-primary" id="register">
+              Submit Form
+            </button>
+            <a href="login.html" type="link" class="mx-2">Go to Login page</a>
+          </div>
+        </form>
+        <div class="p-hint mt-4 bg-info">
+          <p>Hints: Password must contain</p>
+          <ul>
+            <li>atleast one uppercase</li>
+            <li>atleast one lowercase</li>
+            <li>atleast one digit</li>
+            <li>one or more special character</li>
+          </ul>
+        </div>
+      </section>
+      
+    </main>
+    <footer class="mt-4 p-5 text-center h3 bg-dark text-light">
+      Cypher &copy;2021
+    </footer>
+  </body>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="staticBackdrop"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">
+            Terms and Conditions
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            corrupti, quos maiores quidem temporibus maxime ea ipsa cupiditate
+            vel necessitatibus adipisci totam labore ut, facere aperiam illum
+            soluta at. Labore.
+          </p>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              quasi.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              quasi.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              quasi.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              quasi.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              quasi.
+            </li>
+          </ul>
+
+          <h3>Gracias!!!</h3>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+  <script type="module" src="/Javascript/app2.js"></script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>My Website/login</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">DEMOSTORES</a>
+      </div>
+    </nav>
+    <main class="container mt-5">
+      <section class="login">
+        <form>
+          <div class="form loginForm">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="emailLogin" />
+            </div>
+            <label for="password" class="form-label">Password</label>
+            <div class="input-group mb-4">
+              <input type="password" class="form-control" id="passwordLogin" />
+              <button class="change-type" id="button-three">Show</button>
+            </div>
+            <button type="submit" class="btn btn-success" id="submit">
+              Login
+            </button>
+            <a href="register.html" class="mx-2">Register?</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="mt-5 p-5 text-center h3 bg-dark text-light">
+      Cypher &copy;2021
+    </footer>
+  </body>
+
+  <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+  <script type="module" src="/Javascript/app2.js"></script>
+</html>

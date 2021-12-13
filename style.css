@@ -1,0 +1,85 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    'navbar'
+    'main'
+    'footer';
+  grid-template-rows: 2rem auto fit-content(8rem);
+  height: 100%;
+}
+
+nav {
+  position: fixed;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.p-hint {
+  padding: 0.5rem;
+}
+
+pre {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  white-space: pre-line;
+}
+
+.input-border {
+  border-color: red !important;
+}
+
+.invalid {
+  color: red;
+  padding-top: 2px;
+  display: none;
+}
+
+.alert {
+  position: fixed;
+  font-size: 1.2rem;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  z-index: 5;
+}
+
+.alert-logupd {
+  position: fixed;
+  top: 25%;
+  left: 5%;
+  width: 90%;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.invalid-terms {
+  color: red;
+  padding-top: 2px;
+}
+
+.user-email-info {
+  display: none;
+}
+
+.change-type {
+  background: #eeeee0;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.change-type-password {
+  border: 1px solid #ced4da;
+  border-radius: 5px !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
