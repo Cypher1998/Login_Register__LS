@@ -1,4 +1,4 @@
-login-register-with-localstorage.netlify.app
+https://login-register-with-localstorage.netlify.app/
 
 This repository contains several files. 
 TITLE: A LOGIN/ REGISTER WEBPAGEs. 
