@@ -6,15 +6,12 @@ import { logUpdMessage } from './app3.js';
 const currentUser = JSON.parse(localStorage.getItem('currentUser'));
 
 // check if user is signed in
-
 if (currentUser === null) {
   document.getElementById('logout').setAttribute('href', '#');
   document.getElementById('logout').addEventListener('click', function () {
-    // alert('Please Login!');
     console.log('alert');
   });
 
-  // document.querySelector('.username').textContent = 'GuestUser';
   document.querySelector('main').innerHTML = `
       <div class="text-center mt-5">
         <h3 class="text-center text-danger pt-5">
@@ -25,6 +22,17 @@ if (currentUser === null) {
       
     `;
 } else if (currentUser !== null) {
+  // logout button event
+  document.getElementById('logout').setAttribute('href', '#');
+  document.getElementById('logout').addEventListener('click', function () {
+    if (confirm('Do you want to logout?')) {
+      logUpdMessage('Logout success', 'text-center alert-logupd alert-success');
+
+      localStorage.removeItem('currentUser');
+      window.location.reload();
+    }
+  });
+
   if (document.querySelector('.username')) {
     document.querySelector(
       '.username'
@@ -44,14 +52,6 @@ if (currentUser === null) {
       document.querySelector('.time').textContent = 'Good Evening';
     }
   }
-
-  // logout button event
-  document.getElementById('logout').addEventListener('click', function () {
-    if (confirm('Do you want to logout?')) {
-      logUpdMessage('Logout success', 'text-center alert-logupd alert-success');
-    }
-    localStorage.removeItem('currentUser');
-  });
 
   // paint user profile in DOM
   if (document.querySelector('.user-details')) {
